@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/emirotin/mongodb-migrations.git"
+    "url": "git://github.com/iiwaasnet/mongodb-migrations.git"
   },
   "keywords": [
     "mongodb",
@@ -20,12 +20,12 @@
     "migration",
     "migrations"
   ],
-  "author": "Eugene Mirotin <emirotin@gmail.com>",
+  "author": "Eugene Mirotin <emirotin@gmail.com>, Sergey Ivasenko <givasena@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/emirotin/mongodb-migrations/issues"
+    "url": "https://github.com/iiwaasnet/mongodb-migrations/issues"
   },
-  "homepage": "https://github.com/emirotin/mongodb-migrations",
+  "homepage": "https://github.com/iiwaasnet/mongodb-migrations",
   "dependencies": {
     "lodash": "^2.4.1",
     "mongo-pool2": "^0.0.6",
