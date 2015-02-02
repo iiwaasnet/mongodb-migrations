@@ -177,10 +177,11 @@ class Migrator
       nextNum = Math.max(maxNum, 0) + 1
       slug = (id or '').toLowerCase().replace /\s+/, '-'
       ext = if coffeeScript then 'coffee' else 'js'
-      fileName = path.join dir, "#{nextNum}-#{slug}.#{ext}"
+      migrationId = "#{nextNum}-#{slug}"
+      fileName = path.join dir, "#{migrationId}.#{ext}"
       if coffeeScript
         body = """
-          module.exports.id = "#{id}"
+          module.exports.id = "#{migrationId}"
 
           module.exports.up = (done) ->
             # use @db for MongoDB communication, and @log() for logging
@@ -192,7 +193,7 @@ class Migrator
         """
       else
         body = """
-          module.exports.id = "#{id}";
+          module.exports.id = "#{migrationId}";
 
           module.exports.up = function (done) {
             // use this.db for MongoDB communication, and this.log() for logging
