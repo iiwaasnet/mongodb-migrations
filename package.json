@@ -2,6 +2,7 @@
   "name": "mongodb-migrations",
   "version": "0.2.1",
   "description": "A migration framework for MongoDB",
+  "private": true,
   "main": "lib/mongodb-migrations.js",
   "scripts": {
     "test": "./node_modules/.bin/mocha --compilers coffee:coffee-script/register -r should"
